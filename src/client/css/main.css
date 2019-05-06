@@ -181,7 +181,7 @@ div {
 #spectateButton:active, #spectateButton:hover,
 #startButton:active, #startButton:hover {
     top: 1px;
-    background: #55D88B;
+    background: #d3463f;
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -212,7 +212,7 @@ div {
 
 #settingsButton:active, #settingsButton:hover {
     top: 1px;
-    background: #55D88B;
+    background: #d3463f;
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
