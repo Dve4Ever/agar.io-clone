@@ -126,6 +126,7 @@ div {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     background-color: white;
+    transition: box-shadow 0.3s, border 0.3s;
     box-sizing: border-box;
 }
 
