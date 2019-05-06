@@ -36,8 +36,8 @@
       "connectionLimit": 100,
       "host": "DEFAULT",
       "user": "root",
-      "password": "DEFAULT",
-      "database": "DEFAULT",
+      "password": "password",
+      "database": "admin",
       "debug": false
     }
 }
