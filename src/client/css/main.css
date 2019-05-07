@@ -128,12 +128,12 @@ div {
     background-color: white;
     transition: box-shadow 3.3s, border 3.3s;
     box-sizing: border-box;
-    border: solid .3px #a5a5a5;
+    border: solid 1.3px #a5a5a5;
     box-shadow: 0px 0px 0px 0px #000000;
 }
 
 #startMenu p {
-    padding: 3.3;
+    padding: 20.3;
     text-align: center;
     font-size: x-large;
     font-weight: bold;
