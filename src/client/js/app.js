@@ -259,7 +259,7 @@ var app =
 
 	    // Colours the chat input correctly.
 	    newline.className = me ? 'me' : 'friend';
-	    newline.innerHTML = '<b>' + (name.length < 1 ? 'An unnamed cell' : name) + '</b>: ' + message;
+	    newline.innerHTML = '<b>' + (name.length < 1 ? 'An Unnamed Dev4Ever Fan' : name) + '</b>: ' + message;
 
 	    this.appendMessage(newline);
 	};
@@ -592,15 +592,15 @@ var app =
 	    });
 
 	    socket.on('playerDied', function (data) {
-	        chat.addSystemLine('{GAME} - <b>' + (data.name.length < 1 ? 'An unnamed cell' : data.name) + '</b> was eaten.');
+	        chat.addSystemLine('{GAME} - <b>' + (data.name.length < 1 ? 'An Unnamed Dev4Ever Fan' : data.name) + '</b> was eaten.');
 	    });
 
 	    socket.on('playerDisconnect', function (data) {
-	        chat.addSystemLine('{GAME} - <b>' + (data.name.length < 1 ? 'An unnamed cell' : data.name) + '</b> disconnected.');
+	        chat.addSystemLine('{GAME} - <b>' + (data.name.length < 1 ? 'An Unnamed Dev4Ever Fan' : data.name) + '</b> disconnected.');
 	    });
 
 	    socket.on('playerJoin', function (data) {
-	        chat.addSystemLine('{GAME} - <b>' + (data.name.length < 1 ? 'An unnamed cell' : data.name) + '</b> joined.');
+	        chat.addSystemLine('{GAME} - <b>' + (data.name.length < 1 ? 'An Unnamed Dev4Ever Fan' : data.name) + '</b> joined.');
 	    });
 
 	    socket.on('leaderboard', function (data) {
@@ -611,7 +611,7 @@ var app =
 	            if (leaderboard[i].id == player.id) {
 	                if (leaderboard[i].name.length !== 0) status += '<span class="me">' + (i + 1) + '. ' + leaderboard[i].name + "</span>";else status += '<span class="me">' + (i + 1) + ". An unnamed cell</span>";
 	            } else {
-	                if (leaderboard[i].name.length !== 0) status += i + 1 + '. ' + leaderboard[i].name;else status += i + 1 + '. An unnamed cell';
+	                if (leaderboard[i].name.length !== 0) status += i + 1 + '. ' + leaderboard[i].name;else status += i + 1 + '. An Unnamed Dev4Ever Fan';
 	            }
 	        }
 	        //status += '<br />Players: ' + data.players;
