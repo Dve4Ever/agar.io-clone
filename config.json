@@ -5,7 +5,7 @@
     "foodMass": 1,
     "fireFood": 20,
     "limitSplit": 512,
-    "defaultPlayerMass": 500,
+    "defaultPlayerMass": 4000,
 	"virus": {
     "fill": "#33ff33",
   	"stroke": "#19D119",
@@ -21,7 +21,7 @@
     "adminPass": "DEFAULT",
     "gameMass": 7500,
     "maxFood": 4100,
-    "maxVirus": 100,
+    "maxVirus": 7,
     "slowBase": 4.5,
     "logChat": 0,
     "networkUpdateFactor": 40,
