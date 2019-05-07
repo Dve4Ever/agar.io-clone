@@ -129,11 +129,11 @@ div {
     transition: box-shadow .3s, border .3s;
     box-sizing: border-box;
     border: solid 0px #000000;
-    box-shadow: 1px 1px 1px 1px #000000;
+    box-shadow: 0px 0px 0px 0px #000000;
 }
 
 #startMenu p {
-    padding: .1;
+    padding: .3;
     text-align: center;
     font-size: x-large;
     font-weight: bold;
