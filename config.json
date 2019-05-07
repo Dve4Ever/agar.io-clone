@@ -18,7 +18,7 @@
 	},
     "gameWidth": 2700,
     "gameHeight": 2700,
-    "adminPass": "Df050318",
+    "adminPass": "Dev4Ever",
     "gameMass": 7500,
     "maxFood": 215,
     "maxVirus": 7,
@@ -36,7 +36,7 @@
       "connectionLimit": 100,
       "host": "Dev4Ever",
       "user": "Dev4Ever",
-      "password": "Df050318",
+      "password": "Dev4Ever",
       "database": "Dev4Ever",
       "debug": false
     }
