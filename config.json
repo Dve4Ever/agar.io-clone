@@ -4,7 +4,7 @@
     "logpath": "logger.php",
     "foodMass": 1,
     "fireFood": 20,
-    "limitSplit": 256,
+    "limitSplit": 64,
     "defaultPlayerMass": 12,
 	"virus": {
     "fill": "#33ff33",
@@ -20,7 +20,7 @@
     "gameHeight": 2700,
     "adminPass": "password",
     "gameMass": 7500,
-    "maxFood": 2700,
+    "maxFood": 210,
     "maxVirus": 7,
     "slowBase": 4.5,
     "logChat": 0,
