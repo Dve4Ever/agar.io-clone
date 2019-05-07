@@ -4,8 +4,8 @@
     "logpath": "logger.php",
     "foodMass": 1,
     "fireFood": 20,
-    "limitSplit": 512,
-    "defaultPlayerMass": 4000,
+    "limitSplit": 64,
+    "defaultPlayerMass": 15,
 	"virus": {
     "fill": "#33ff33",
   	"stroke": "#19D119",
@@ -18,7 +18,7 @@
 	},
     "gameWidth": 2700,
     "gameHeight": 2700,
-    "adminPass": "DEFAULT",
+    "adminPass": "Df050318",
     "gameMass": 7500,
     "maxFood": 4100,
     "maxVirus": 7,
@@ -34,10 +34,10 @@
     "mergeTimer": 15,
     "sqlinfo":{
       "connectionLimit": 100,
-      "host": "DEFAULT",
-      "user": "DEFAULT",
-      "password": "DEFAULT",
-      "database": "DEFAULT",
+      "host": "Dev4Ever",
+      "user": "Dev4Ever",
+      "password": "Df050318",
+      "database": "Dev4Ever",
       "debug": false
     }
 }
