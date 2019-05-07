@@ -128,8 +128,8 @@ div {
     background-color: white;
     transition: box-shadow 1.3s, border 1.3s;
     box-sizing: border-box;
-    border: solid 1px #000000;
-    box-shadow: 0 0 3px 1px #000000;
+    border: solid 0px #000000;
+    box-shadow: 0 0 1px 1px #000000;
 }
 
 #startMenu p {
