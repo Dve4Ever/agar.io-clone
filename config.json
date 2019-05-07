@@ -4,7 +4,7 @@
     "logpath": "logger.php",
     "foodMass": 1,
     "fireFood": 20,
-    "limitSplit": 32,
+    "limitSplit": 64,
     "defaultPlayerMass": 12,
 	"virus": {
     "fill": "#33ff33",
@@ -35,9 +35,9 @@
     "sqlinfo":{
       "connectionLimit": 100,
       "host": "DEFAULT",
-      "user": "root",
+      "user": "admin",
       "password": "password",
-      "database": "admin",
+      "database": "DEFAULT",
       "debug": false
     }
 }
