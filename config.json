@@ -4,7 +4,7 @@
     "logpath": "logger.php",
     "foodMass": 1,
     "fireFood": 20,
-    "limitSplit": 64,
+    "limitSplit": 128,
     "defaultPlayerMass": 12,
 	"virus": {
     "fill": "#33ff33",
