@@ -35,8 +35,8 @@
     "sqlinfo":{
       "connectionLimit": 100,
       "host": "DEFAULT",
-      "user": "admin",
-      "password": "password",
+      "user": "DEFAULT",
+      "password": "DEFAULT",
       "database": "DEFAULT",
       "debug": false
     }
