@@ -97,8 +97,8 @@ div {
 }
 
 .chatbox .chat-list li.system {
-    color: #9b59b6;
-    font-style: italic;
+    color: #ce0000;
+    font-style: bold;
 }
 
 .chatbox .chat-list li.system:before {
