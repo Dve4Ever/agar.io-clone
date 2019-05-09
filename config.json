@@ -9,18 +9,18 @@
 	"virus": {
     "fill": "#33ff33",
   	"stroke": "#19D119",
-		"strokeWidth": 25,
+		"strokeWidth": 32,
 		"defaultMass": {
-            "from": 110,
-            "to": 160
+            "from": 120,
+            "to": 170
         },
 		"splitMass": 180
 	},
-    "gameWidth": 3100,
-    "gameHeight": 3100,
+    "gameWidth": 3200,
+    "gameHeight": 3200,
     "adminPass": "Dev4Ever",
     "gameMass": 7500,
-    "maxFood": 320,
+    "maxFood": 380,
     "maxVirus": 9,
     "slowBase": 4.5,
     "logChat": 0,
