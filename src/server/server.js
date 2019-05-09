@@ -597,7 +597,7 @@ function tickPlayer(currentPlayer) {
         users.forEach(tree.put);
         var playerCollisions = [];
 
-        var otherUsers = tree.get({x:currentCell.x, y: currentCell.y, w: currentCell.radius * 2, h: currentCell.radius * 2}, check);
+        var otherUsers = tree.get({x:currentCell.x, y: currentCell.y, w: currentCell.radius * 3, h: currentCell.radius * 3}, check);
 
         playerCollisions.forEach(collisionCheck);
     }
