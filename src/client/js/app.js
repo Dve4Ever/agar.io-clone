@@ -597,7 +597,7 @@ function gameLoop() {
             }
         }
         else {
-              graph.fillText('Disconnected!', global.screenWidth / 2, global.screenHeight / 2);
+              graph.fillText('Game updated! (everyone)', global.screenWidth / 2, global.screenHeight / 2);
         }
     }
 }
