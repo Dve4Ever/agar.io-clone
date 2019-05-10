@@ -597,7 +597,7 @@ function gameLoop() {
             }
         }
         else {
-              graph.fillText('Game Crash!', global.screenWidth / 2, global.screenHeight / 2);
+              graph.fillText('Automatic Server Restart!', global.screenWidth / 2, global.screenHeight / 2);
         }
     }
 }
