@@ -9,7 +9,7 @@
 	"virus": {
     "fill": "#33ff33",
   	"stroke": "#19D119",
-		"strokeWidth": 32,
+		"strokeWidth": 25,
 		"defaultMass": {
             "from": 120,
             "to": 170
