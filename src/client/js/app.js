@@ -589,7 +589,7 @@ function gameLoop() {
         graph.font = 'bold 30px sans-serif';
         if (global.kicked) {
             if (reason !== '') {
-                graph.fillText('You were kicked for:', global.screenWidth / 2, global.screenHeight / 2 - 20);
+                graph.fillText('You were kicked for: Bullying', global.screenWidth / 2, global.screenHeight / 2 - 20);
                 graph.fillText(reason, global.screenWidth / 2, global.screenHeight / 2 + 20);
             }
             else {
