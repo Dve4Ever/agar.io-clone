@@ -13,8 +13,8 @@ module.exports = {
     spin: -Math.PI,
     enemySpin: -Math.PI,
     mobile: false,
-    foodSides: 10,
-    virusSides: 15,
+    foodSides: 15,
+    virusSides: 20,
 
     // Canvas
     screenWidth: window.innerWidth,
@@ -27,7 +27,7 @@ module.exports = {
     disconnected: false,
     died: false,
     kicked: false,
-    continuity: false,
+    continuity: true,
     startPingTime: 0,
     toggleMassState: 0,
     backgroundColor: '#f2fbff',
