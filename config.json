@@ -11,17 +11,17 @@
   	"stroke": "#19D119",
 		"strokeWidth": 25,
 		"defaultMass": {
-            "from": 120,
-            "to": 170
+            "from": 100,
+            "to": 200
         },
 		"splitMass": 180
 	},
-    "gameWidth": 3500,
-    "gameHeight": 3500,
+    "gameWidth": 4000,
+    "gameHeight": 4000,
     "adminPass": "Dev4Ever",
     "gameMass": 7500,
-    "maxFood": 450,
-    "maxVirus": 11,
+    "maxFood": 550,
+    "maxVirus": 13,
     "slowBase": 4.5,
     "logChat": 0,
     "networkUpdateFactor": 40,
@@ -31,7 +31,7 @@
     "newPlayerInitialPosition": "farthest",
     "massLossRate": 1,
     "minMassLoss": 50,
-    "mergeTimer": 15,
+    "mergeTimer": 10,
     "sqlinfo":{
       "connectionLimit": 100,
       "host": "Dev4Ever",
