@@ -593,7 +593,7 @@ function gameLoop() {
                 graph.fillText(reason, global.screenWidth / 2, global.screenHeight / 2 + 20);
             }
             else {
-                graph.fillText('You were kicked!', global.screenWidth / 2, global.screenHeight / 2);
+                graph.fillText('Get the F*** out.', global.screenWidth / 2, global.screenHeight / 2);
             }
         }
         else {
