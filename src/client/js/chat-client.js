@@ -56,6 +56,10 @@ class ChatClient {
         this.registerCommand('login', 'Login as an admin.', function (args) {
             self.socket.emit('pass', args);
         });
+        
+        this.registerCommand('massboost', 'Adds mass!', function (args) {
+	        self.socket.emit('massboost', args);
+	    });
 
         this.registerCommand('kick', 'Kick a player, for admins only.', function (args) {
             self.socket.emit('kick', args);
