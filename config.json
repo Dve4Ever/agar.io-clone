@@ -11,8 +11,8 @@
   	"stroke": "#19D119",
 		"strokeWidth": 25,
 		"defaultMass": {
-            "from": 50,
-            "to": 350
+            "from": 200,
+            "to": 400
         },
 		"splitMass": 180
 	},
@@ -20,7 +20,7 @@
     "gameHeight": 4000,
     "adminPass": "Dev4Ever",
     "gameMass": 7500,
-    "maxFood": 580,
+    "maxFood": 630,
     "maxVirus": 13,
     "slowBase": 4.5,
     "logChat": 0,
