@@ -59,43 +59,41 @@ body {
             <input type="text" tabindex="0" autofocus placeholder="Enter your name here" id="playerNameInput" maxlength="25" />
             <b class="input-error">Nick must be alphanumeric characters only!</b>
             <br />
-            <div class="form-group clearfix">
-<!--
- 
-<select id="gamemode2" class="form-control nicks" onchange="newConnection($(this).val());" required>
-<option class="selectMod easy" rel="799" value="149.202.89.101:450">GIANT 1 / Easy - 115 / 150</option>
-<option class="selectMod easy" rel="800" value="149.202.89.101:451">GIANT 2 / Easy - 117 / 150</option>
-<option class="selectMod easy" rel="801" value="149.202.87.81:451">GIANT 3 / Easy - 88 / 150</option>
-<option class="selectMod easy" rel="802" value="149.202.87.81:450">GIANT 4 / Easy - 102 / 150</option>
-<option class="selectMod easy" rel="803" value="149.202.87.69:451">GIANT 5 / Easy - 98 / 150</option>
-<option class="selectMod easy" rel="804" value="158.69.23.81:1199">GIANT 6 / Easy - 86 / 150</option>
-<option class="selectMod easy" rel="805" value="149.202.87.169:1452">GIANT 7 / Easy - 69 / 150</option>
-<option class="selectMod easy" rel="806" value="149.202.87.169:1453">GIANT 8 / Easy - 76 / 150</option>
-<option class="selectMod easy" rel="815" value="149.202.87.169:1456">GIANT 9 / Easy - 65 / 150</option>
-<option class="selectMod easy" rel="816" value="149.202.87.169:1457">GIANT 10 / Easy - 78 / 150</option>
-<option class="selectMod easy" rel="807" value="149.202.87.69:450">GIANT 11 / Big Map - 85 / 150</option>
-<option class="selectMod easy" rel="808" value="158.69.23.81:1452">GIANT 12 / Big Map - 98 / 150</option>
-<option class="selectMod easy" rel="809" value="149.202.87.69:1453">FFA - 85 / 150</option>
-<option class="selectMod easy" rel="810" value="158.69.23.81:450">Instant Merge 1 - 78 / 150</option>
-<option class="selectMod easy" rel="813" value="149.202.89.101:452">Instant Merge 2 - 64 / 150</option>
-<option class="selectMod easy" rel="814" value="149.202.87.81:452">VIRUS SHOOT - 50 / 150</option>-->
- 
-<select id="gamemode2" class="form-control nicks" onchange="newConnection($(this).val());" required>
-<option class="selectMod easy" rel="799" value="149.202.89.101:450">FFA 1 - Pro PLayers</option>
-<option class="selectMod easy" rel="800" value="149.202.89.101:451">FFA 2 - Pro PLayers</option>
-<option class="selectMod easy" rel="801" value="149.202.89.101:453">FFA 3 - Pro PLayers</option>
-<option class="selectMod easy" rel="802" value="149.202.89.101:454">FFA 4 - Pro PLayers</option>
-<option class="selectMod easy" rel="803" value="149.202.89.101:4519">FFA 5 - Pro PLayers</option>
-<option class="selectMod easy" rel="804" value="149.202.89.101:4529">FFA 6 - Amator PLayers</option>
-<option class="selectMod easy" rel="805" value="149.202.89.101:4539">FFA 7 - Amator PLayers</option>
-<option class="selectMod easy" rel="807" value="149.202.89.101:4509">FFA 8 - Amator PLayers</option>
-<option class="selectMod easy" rel="813" value="149.202.89.101:452">FFA 9 - Semi Pro PLayers</option>
-<option class="selectMod easy" rel="809" value="149.202.89.101:1453">FFA 10 - LEGEND PLayers</option>
-<!--<option class="selectMod easy" rel="809" value="149.202.87.69:1453">FFA Server - Party</option>
-<option class="selectMod easy" rel="813" value="149.202.89.101:452">Instant Merge - Pro Players</option>
--->
-
-</select></div>
+            <div class="modal" id="selector">
+        <div class="tile" id="skinModal" style="transform: translate(-50%, -50%);">
+            <span onclick="$('#selector').fadeOut('fast');" id="skinClose" style="cursor: pointer;position: absolute;width: 100%;top: 0px;left: 169px;">x</span>
+            <button class="btn btn-info navbar-btn btn-s" type="button" style="display:none;position:absolute;left:245px;top:9px;" id="clearSearch" onclick="clearSearch(); $('#searchText').val(''); $('#clearSearch').hide();">Clear Search</button>
+            <form onsubmit="findInPage(document.getElementById('searchText').value); return false;">
+                <input type="text" placeholder="Search" class="form-control" style="width: 220px; position: absolute; border:none;" id="searchText" autocomplete="off">
+            </form>
+            <div class="skins" id="skins">
+                <ul class="skinList">
+                    <li>
+                        <img onclick="setSkin('None');" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+                        <p>None</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="login" style="transform: translate(-50%, -50%);">
+	<div class="tile" id="party2" style="height:300px;margin-bottom:0 !important;">
+	
+<div>
+               
+                <center>
+				
+	 <div id="adsTop">
+            <div id="adsTopInner">
+           
+               <p style="font-size:0.20em;">Advertisement</p>
+               	<div id='agarabi-com_728x90'>
+		<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('agarabi-com_728x90'); });
+		</script>
+            </div>
+            </div>
+        </div>			
             <a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">Play</button></a>
             <button id="spectateButton">Spectate</button>
             <button id="settingsButton">Settings</button>
