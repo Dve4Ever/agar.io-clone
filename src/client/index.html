@@ -59,6 +59,31 @@ body {
             <input type="text" tabindex="0" autofocus placeholder="Enter your name here" id="playerNameInput" maxlength="25" />
             <b class="input-error">Nick must be alphanumeric characters only!</b>
             <br />		
+            <select id="gamemode2" class="form-control nicks" onchange="newConnection($(this).val());" required>
+<option class="selectMod easy" rel="USA" value="142.44.142.134:450?key=d899936">GIANT 1 -  USA</option>
+
+<option class="selectMod easy" rel="USA" value="142.44.142.134:451?key=d899936">GIANT 2 -  USA</option>
+
+<option class="selectMod easy" rel="USA" value="142.44.142.134:453?key=d899936">CRAZY GIANT 1 -  USA</option>
+
+<option class="selectMod easy" rel="USA" value="142.44.142.134:461?key=d899936">CRAZY GIANT 2 -  USA</option>
+
+<option class="selectMod easy" rel="USA" value="142.44.142.134:462?key=d899936">RAINBOW -  USA</option>
+
+<option class="selectMod easy" rel="USA" value="142.44.142.134:454?key=d899936">INSTA MERGE -  USA</option>
+
+<option class="selectMod easy" rel="USA" value="142.44.142.134:801?key=d899936">INSTA MERGE 2 -  USA</option>
+
+<option class="selectMod easy" rel="USA" value="142.44.142.134:456?key=d899936">VIRUS POP 1 -  USA</option>
+
+<option class="selectMod easy" rel="USA" value="142.44.142.134:458?key=d899936">VIRUS POP 2 -  USA</option>
+
+<option class="selectMod easy" rel="USA" value="142.44.142.134:460?key=d899936">VIRUS POP 3 -  USA</option>
+
+<option class="selectMod easy" rel="USA" value="142.44.142.134:459?key=d899936">VIRUS WAR -  USA</option>
+
+	
+</select>
             <a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">Play</button></a>
             <button id="spectateButton">Spectate</button>
             <button id="settingsButton">Settings</button>
