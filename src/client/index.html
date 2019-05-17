@@ -1,184 +1,178 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <!-- Meta Properties -->
-    <link rel="icon" href="https://agar.io/favicon-32x32.png" type="image/x-icon" />
-    <meta charset="UTF-8">
-    <title>Cell Attack</title>
-    <meta name="description" content="The smash hit game! Control your cell and eat other players to grow larger! Play with millions of players around the world and try to become the biggest cell of all!">
-    <meta name="keywords" content="agario, agar, io, cell, cells, virus, bacteria, blob, game, games, web game, html5, fun, flash, devoooo, popular, free, dev4ever, online, pewdiepie, jumbo, agario hacks, google">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <meta name="content-language" content="en_US" />
-    <meta name="language" content="en_US" />
-    <meta name="google" content="notranslate">
-    <meta name="robots" content="all" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109841514-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-109841514-2');
-</script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css" />
-    <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
-    <style>
-    body {
-    font-family: 'Baloo';font-size: 22px;
-    }
-    </style>
-    <!--JS-->
-    <!-- Audio -->
-    <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=hXwOW2DYMIk#gsc.tab=0" frameborder="0" allowfullscreen></iframe>
-    <audio id="music" src="audio/background.mp3"></audio>
-    <audio id="split_cell" src="audio/split.mp3"></audio>
-    <audio id="spawn_cell" src="audio/spawn.mp3"></audio>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-5731588986654370",
-          enable_page_level_ads: true
-     });
-</script>
-<style type="text/css">
-.centerImage
-{
- text-align:center;
- display:block;
-}
-</style>
-</head>   
-<body>
-    <div id="gameAreaWrapper">
-        <div id="status"><span class="title">Leaderboard</span></div>
-        <div class="chatbox" id="chatbox">
+   <head>
+      <!-- Meta Properties -->
+      <link rel="icon" href="https://agar.io/favicon-32x32.png" type="image/x-icon" />
+      <meta charset="UTF-8">
+      <title>Cell Attack</title>
+      <meta name="description" content="The smash hit game! Control your cell and eat other players to grow larger! Play with millions of players around the world and try to become the biggest cell of all!">
+      <meta name="keywords" content="agario, agar, io, cell, cells, virus, bacteria, blob, game, games, web game, html5, fun, flash, devoooo, popular, free, dev4ever, online, pewdiepie, jumbo, agario hacks, google">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+      <meta name="content-language" content="en_US" />
+      <meta name="language" content="en_US" />
+      <meta name="google" content="notranslate">
+      <meta name="robots" content="all" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109841514-2"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-109841514-2');
+      </script>
+      <!-- CSS -->
+      <link rel="stylesheet" href="css/main.css" />
+      <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+      <style>
+         body {
+         font-family: 'Baloo';font-size: 22px;
+         }
+      </style>
+      <!--JS-->
+      <!-- Audio -->
+      <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=hXwOW2DYMIk#gsc.tab=0" frameborder="0" allowfullscreen></iframe>
+      <audio id="music" src="audio/background.mp3"></audio>
+      <audio id="split_cell" src="audio/split.mp3"></audio>
+      <audio id="spawn_cell" src="audio/spawn.mp3"></audio>
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-5731588986654370",
+              enable_page_level_ads: true
+         });
+      </script>
+      <style type="text/css">
+         .centerImage
+         {
+         text-align:center;
+         display:block;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="gameAreaWrapper">
+         <div id="status"><span class="title">Leaderboard</span></div>
+         <div class="chatbox" id="chatbox">
             <ul id="chatList" class="chat-list"></ul>
             <input id="chatInput" type="text" class="chat-input" placeholder="Press enter to chat..." maxlength="35" />
-        </div>
-        <div id="mobile">
-           <input type="image" id="split" class="split" src="img/split.png" alt="splitBtn">
-           <input type="image" id="feed" class="feed" src="img/feed.png" alt="feedBtn">
-        </div>
-        <canvas tabindex="1" id="cvs"></canvas>
-    </div>
-    <div id="startMenuWrapper">
-        <div id="startMenu">
+         </div>
+         <div id="mobile">
+            <input type="image" id="split" class="split" src="img/split.png" alt="splitBtn">
+            <input type="image" id="feed" class="feed" src="img/feed.png" alt="feedBtn">
+         </div>
+         <canvas tabindex="1" id="cvs"></canvas>
+      </div>
+      <div id="startMenuWrapper">
+         <div id="startMenu">
             <p class="centerImage"><img src="https://raw.githubusercontent.com/Dve4Ever/cell-attack/master/LogoMakr_5yspMU.png" alt="Cell Attack"></p>
             <input type="text" tabindex="0" autofocus placeholder="Enter your name here" id="playerNameInput" maxlength="25" />
             <b class="input-error">Nick must be alphanumeric characters only!</b>
             <br />		
             <a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">Play</button></a>
+            <!DOCTYPE html>
+            <html>
+               <head>
+                  <meta name="viewport" content="width=device-width, initial-scale=1">
+                  <style>
+                     body {font-family: Arial, Helvetica, sans-serif;}
+                     /* The Modal (background) */
+                     .modal {
+                     display: none; /* Hidden by default */
+                     position: fixed; /* Stay in place */
+                     z-index: 1; /* Sit on top */
+                     padding-top: 100px; /* Location of the box */
+                     left: 0;
+                     top: 0;
+                     width: 100%; /* Full width */
+                     height: 100%; /* Full height */
+                     overflow: auto; /* Enable scroll if needed */
+                     background-color: rgb(0,0,0); /* Fallback color */
+                     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                     }
+                     /* Modal Content */
+                     .modal-content {
+                     background-color: #fefefe;
+                     margin: auto;
+                     padding: 20px;
+                     border: 1px solid #888;
+                     width: 80%;
+                     }
+                     /* The Close Button */
+                     .close {
+                     color: #aaaaaa;
+                     float: right;
+                     font-size: 28px;
+                     font-weight: bold;
+                     }
+                     .close:hover,
+                     .close:focus {
+                     color: #000;
+                     text-decoration: none;
+                     cursor: pointer;
+                     }
+                  </style>
+               </head>
+               <body>
+                  <button id="skinsButton">Open Modal</button>
+                  <div id="skinsModal" class="modal">
+                     <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <b>Skins</b>
+                     </div>
+                  </div>
+                  <script>
+                     // Get the modal
+                     var modal = document.getElementById("skinsModal");
+                     
+                     // Get the button that opens the modal
+                     var btn = document.getElementById("skinsButton");
+                     
+                     // Get the <span> element that closes the modal
+                     var span = document.getElementsByClassName("close")[0];
+                     
+                     // When the user clicks the button, open the modal 
+                     btn.onclick = function() {
+                       modal.style.display = "block";
+                     }
+                     
+                     // When the user clicks on <span> (x), close the modal
+                     span.onclick = function() {
+                       modal.style.display = "none";
+                     }
+                     
+                     // When the user clicks anywhere outside of the modal, close it
+                     window.onclick = function(event) {
+                       if (event.target == modal) {
+                         modal.style.display = "none";
+                       }
+                     }
+                  </script>
+               </body>
+            </html>
             <button id="spectateButton">Spectate</button>
             <button id="settingsButton">Settings</button>
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-</style>
-</head>
-<body>
-<button id="skinsButton">Open Modal</button>
-<div id="skinsModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <b>Skins</b>
-  </div>
-</div>
-<script>
-// Get the modal
-var modal = document.getElementById("skinsModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("skinsButton");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-</body>
-</html>
-
             <br />
             <div id="settings">
-                <h3>Settings</h3>
-                <ul>
-                    <label><input id="visBord" type="checkbox">Show border</label>
-                    <label><input id="showMass" type="checkbox">Show mass</label>
-                    <br />
-                    <label><input id="continuity" type="checkbox">Continue moving when mouse is off-screen</label>
-                    <br />
-                    <label><input id="roundFood" type="checkbox" checked>Rounded food</label>
-                    <label><input id="darkMode" type="checkbox">Toggle Dark Mode</label>
-                </ul>
+               <h3>Settings</h3>
+               <ul>
+                  <label><input id="visBord" type="checkbox">Show border</label>
+                  <label><input id="showMass" type="checkbox">Show mass</label>
+                  <br />
+                  <label><input id="continuity" type="checkbox">Continue moving when mouse is off-screen</label>
+                  <br />
+                  <label><input id="roundFood" type="checkbox" checked>Rounded food</label>
+                  <label><input id="darkMode" type="checkbox">Toggle Dark Mode</label>
+               </ul>
             </div>
-        </div>
-    </div>
-             </div>
-        </div>
-    <!-- JS -->
-    <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="js/app.js"></script>
-</body>
+         </div>
+      </div>
+      </div>
+      </div>
+      <!-- JS -->
+      <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+      <script src="js/app.js"></script>
+   </body>
 </html>
