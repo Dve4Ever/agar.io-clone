@@ -44,15 +44,16 @@ body {
           enable_page_level_ads: true
      });
 </script>
-    <style>
-.marginauto {
-    margin: 10px auto 20px;
-    display: block;
+<style>
+.verticalhorizontal {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
 }
 </style>
-
-</head>
-    
+</head>   
 <body>
     <div id="gameAreaWrapper">
         <div id="status"><span class="title">Leaderboard</span></div>
@@ -68,7 +69,9 @@ body {
     </div>
     <div id="startMenuWrapper">
         <div id="startMenu">
+            <div class="verticalhorizontal">
             <img class="marginauto" src="https://raw.githubusercontent.com/Dve4Ever/cell-attack/master/LogoMakr_5yspMU.png" alt="Cell Attack" align="middle">
+            </div>
             <input type="text" tabindex="0" autofocus placeholder="Enter your name here" id="playerNameInput" maxlength="25" />
             <b class="input-error">Nick must be alphanumeric characters only!</b>
             <br />		
