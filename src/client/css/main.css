@@ -4,17 +4,13 @@
 }
 
 html, body {
-    background: url('https://devoooo.weebly.com/uploads/5/9/8/0/59800189/download.png') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    overflow:hidden;
+    background-image: url("https://devoooo.weebly.com/uploads/5/9/8/0/59800189/download.png");
+    overflow: hidden;
 }
 
 html, body, canvas {
     width: 100%;
-    height: 100%;s
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -33,6 +29,7 @@ div {
     width: 100px;
     height: 100px;
     padding: 5px;
+    border: none;
 }
 
 #feed {
@@ -42,6 +39,7 @@ div {
     width: 100px;
     height: 100px;
     padding: 5px;
+    border: none;
 }
 
 #status {
@@ -69,18 +67,11 @@ div {
     position: absolute;
     width: 300px;
     height: 320px;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(165, 165, 165, 0.7);
     bottom: 5px;
     left: 5px;
     border-radius: 5px;
     pointer-events: none;
-    overflow-y:scroll;
-}
-
-#instructions ul{
-    padding: 5px;
-    margin: 0;
-    list-style: none;
 }
 
 .chatbox .chat-list {
@@ -89,7 +80,7 @@ div {
     list-style: none;
     box-sizing: border-box;
     height: 285px;
-    overflow-y:scroll !important;
+    overflow: hidden;
 }
 
 .chatbox .chat-list li {
@@ -106,8 +97,8 @@ div {
 }
 
 .chatbox .chat-list li.system {
-    color: #9b59b6;
-    font-style: italic;
+    color: #ce0000;
+    font-style: bold;
 }
 
 .chatbox .chat-list li.system:before {
@@ -121,126 +112,126 @@ div {
     padding: 8px;
     background: transparent;
     border: none;
-    border-top: 1px solid #DDD;
+    border-top: 1px solid #00000;
     outline: none;
 }
-#instructions{
-    color:#777;
-    text-align:center;
-}
+
 #startMenu {
     position: relative;
     margin: auto;
+    margin-top: 100px;
     width: 350px;
     padding: 20px;
-    padding-bottom:15px;
-    border-radius: 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     background-color: white;
+    transition: box-shadow 3.3s, border 3.3s;
     box-sizing: border-box;
-    color:#333;
+    border: solid 1.2px #d8d6d6;
+    box-shadow: 0px 0px 6px 2px #DDDDD;
 }
 
 #startMenu p {
-    padding: 0;
-    text-align: left;
-    font-size: 30px;
-    font-weight: 400;
-    margin:0;
-    margin-bottom:20px;
-    margin-top:10px;
-    margin-left:20px;
-}
-
-#gamemode{
-    float: right;
-    width:33%;
-    height:36px;
-    padding:6px 12px;
-    line-height:1.42857143;
-    color: #555;
-    background-color:#fff;
-    border:1px solid #ccc;
-    border-radius:4px;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-}
-
-#settings label{
-    width:110px;
-    display:block;
-    float:left;
-    font-size:12px;
-    color:#333;
-    cursor:pointer;
-    line-height:1.42857143;
+    padding: 1.3;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
 }
 
 #playerNameInput {
-    width: 65%;
-    text-align: left;
-    padding: 17px 12px;
-    border: 1px solid #ccc;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    border-radius: 4px;
-    box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
-    height:34px;
-    line-height:1.42857143;
-    color: #555;
-    box-sizing:border-box;
-}
-
-#playerNameInput:focus, #playerNameInput.focus, #gamemode:focus, #gamemode.focus {
-    border-color: #66afe9;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
-}
-
-#startButton, #settingsButton, #skinsButton {
-    margin: auto;
-    width: 130px;
-    height: 35px;
-    font-size: 14px;
-    color: #fff;
+    width: 100%;
     text-align: center;
-    background: #428bca;
-    border: 1px solid #357ebd;
-    cursor: pointer;
-    border-radius: 4px;
+    padding: 10px;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.5s, border 0.5s;
+    box-sizing: border-box;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
 }
 
+#playerNameInput:focus, #playerNameInput.focus {
+    border: solid 1px #CCCCCC;
+    box-shadow: 0 0 3px 1px #DDDDDD;
+}
+
+#startButton, #spectateButton, #skinsButton {
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: large;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #d3463f;
+    border: 0;
+    border-bottom: 2px solid #82130f;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #82130f;
+    box-shadow: inset 0 -2px #82130f;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#spectateButton:active, #spectateButton:hover,
 #startButton:active, #startButton:hover {
-    background: #357ebd;
+    top: 1px;
+    background: #c65651;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 #settingsButton {
-    background-color: #5bc0de;
-    border: 1px solid #46b8da;
-    width:40px;
-    float:left;
-    margin-right:5px;
-    background-image:url('data:image/png;base64,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');
-    background-repeat:no-repeat;
-    background-position:center;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: large;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #d3463f;
+    border: 0;
+    border-bottom: 2px solid #82130f;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #82130f;
+    box-shadow: inset 0 -2px #82130f;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-#skinsButton{
-    background-color: #5bc0de;
-    border: 1px solid #46b8da;
-}
-
-#settingsButton:active, #settingsButton:hover, #skinsButton:active, #skinsButton:hover {
-    background-color: #46b8da;
+#settingsButton:active, #settingsButton:hover {
+    top: 1px;
+    background: #c65651;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 #settings, #startMenuWrapper {
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -ms-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    transition: max-height 1s;
     overflow: hidden;
 }
 
 #settings {
     max-height: 0;
-    margin-bottom:10px;
-    margin-top:10px;
 }
 
 #startMenu h3 {
@@ -271,11 +262,6 @@ div {
     opacity: 0;
 }
 
-hr{
-    border:0;
-    border-top:1px solid #eee;
-}
-
 @media only screen  and (min-width : 1224px) {
 #mobile {
 display: none;
@@ -286,4 +272,15 @@ display: none;
 #chatbox {
 display: none;
         }
+}
+
+input [type="image"]:focus{
+ border:none;
+ outline: 1px solid transparent;
+ border-style: none;
+}
+
+*:focus {
+ outline: 1px solid transparent;
+ border-style: none;
 }
