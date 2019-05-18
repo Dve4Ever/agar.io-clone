@@ -182,7 +182,8 @@ div {
 }
 
 #spectateButton:active, #spectateButton:hover,
-#startButton:active, #startButton:hover {
+#startButton:active, #startButton:hover,
+#skinsButton:active, #skinsButton:hover {
     top: 1px;
     background: #c65651;
     outline: none;
