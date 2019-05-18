@@ -4,9 +4,15 @@
 }
 
 html, body {
-    background-image: url("https://devoooo.weebly.com/uploads/5/9/8/0/59800189/download.png");
-    overflow: hidden;
+    background: url("https://raw.githubusercontent.com/Dve4Ever/cell-attack/master/src/client/img/backgroundNew.png")
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow:hidden;
 }
+
 
 html, body, canvas {
     width: 100%;
