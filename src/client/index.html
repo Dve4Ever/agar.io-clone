@@ -76,7 +76,7 @@
             
             <b class="input-error">Nick must be alphanumeric characters only!</b>
             
-            <button id="startButton">Play</button>
+            <a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">Play</button></a>
             <button onclick="window.location.href = 'skins.html'" id="skinsButton">Skins</button>
             <button id="settingsButton"></button>
             <br />
@@ -86,18 +86,9 @@
                     <label><input id="continuity" type="checkbox" checked>Continuity</label>
                     <label><input id="roundFood" type="checkbox" checked>Rounded food</label>
             </div>
-            <div id="instructions">
-                <hr>
-                <ul>
-                    <li>Move your mouse to control your cell.</li>
-                    <li>Eat other cells to grow bigger.</li>
-                    <li><small style="font-size:9px !important">user id: <span id="userid" style="font-size:9px !important"></span></small></li>
-                </ul>
-                <hr>
                 <b><ul>
-                    <li>Special leaderboard name colours:</li>
-                    <li style="color:#FFCB52">Gold = Programmer of agar5</li>
-                    <li style="color:#44F02E">Green = Game Helper</li>
+                    <li>Creator:</li>
+                    <li style="color:#FFCB52">Dev4Ever</li>
                 </ul></b>
                 </hr>
             </div>
