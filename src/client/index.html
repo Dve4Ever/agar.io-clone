@@ -69,12 +69,9 @@
             <div>     
                <img src="https://raw.githubusercontent.com/Dve4Ever/cell-attack/master/LogoMakr_5yspMU.png" alt="Cell Attack" align="left">
             </div>
-            <input type="text" tabindex="0" autofocus placeholder="Enter your name here" id="playerNameInput" maxlength="30" />
+            <input type="text" tabindex="0" autofocus placeholder="Enter your name here" id="playerNameInput" maxlength="25" />
             <b class="input-error">Nick must be alphanumeric characters only!</b>
-            <select id="gamemode">
-               <option value="regular">Regular</option>
-            </select>
-            <br />
+            <br />		
             <a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">Play</button></a>
             <!DOCTYPE html>
             <html>
@@ -124,7 +121,7 @@
                   <div id="skinsModal" class="modal">
                      <div class="modal-content">
                         <span class="close">&times;</span>
-                        <font size="36">Skins</font>
+                           <font size="36">Skins</font>
                      </div>
                   </div>
                   <script>
@@ -156,13 +153,20 @@
                   </script>
                </body>
             </html>
-            <button id="settingsButton"></button>
+            <button id="spectateButton">Spectate</button>
+            <button id="settingsButton">Settings</button>
             <br />
             <div id="settings">
-               <label><input id="visBord" type="checkbox" checked>Show border</label>
-               <label><input id="showMass" type="checkbox" checked>Show mass</label>
-               <label><input id="continuity" type="checkbox" checked>Continuity</label>
-               <label><input id="roundFood" type="checkbox" checked>Rounded food</label>
+               <h3>Settings</h3>
+               <ul>
+                  <label><input id="visBord" type="checkbox">Show border</label>
+                  <label><input id="showMass" type="checkbox">Show mass</label>
+                  <br />
+                  <label><input id="continuity" type="checkbox">Continue moving when mouse is off-screen</label>
+                  <br />
+                  <label><input id="roundFood" type="checkbox" checked>Rounded food</label>
+                  <label><input id="darkMode" type="checkbox">Toggle Dark Mode</label>
+               </ul>
             </div>
          </div>
       </div>
