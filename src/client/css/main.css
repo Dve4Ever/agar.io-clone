@@ -163,7 +163,7 @@ div {
     box-shadow: 0 0 3px 1px #DDDDDD;
 }
 
-#startButton, #spectateButton, #skinsButton {
+#startButton, #skinsButton {
     position: relative;
     margin: auto;
     margin-top: 10px;
@@ -186,7 +186,6 @@ div {
     margin-bottom: 10px;
 }
 
-#spectateButton:active, #spectateButton:hover,
 #startButton:active, #startButton:hover,
 #skinsButton:active, #skinsButton:hover {
     top: 1px;
@@ -258,7 +257,7 @@ div {
 }
 
 #startMenuWrapper {
-    z-index: 2;
+    z-index: auto;
 }
 
 #gameAreaWrapper {
