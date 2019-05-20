@@ -27,6 +27,11 @@
          font-family: 'Baloo';font-size: 22px;
          }
       </style>
+      <script type="text/javascript">
+         if ( !document.getElementById('test-block') ) {
+             document.getElementById('banner-12345').style.display='block';
+         }
+      </script>
       <!-- Audio -->
       <audio id="split_cell" src="audio/split.mp3"></audio>
       <audio id="spawn_cell" src="audio/spawn.mp3"></audio>
@@ -62,6 +67,22 @@
          <div id="startMenu">
             <div align="center">
                <center>
+                  <div id="banner-12345">
+                     Our website is made possible by displaying online advertisements to our visitors.<br>
+                     Please consider supporting us by disabling your ad blocker on our website.
+                  </div>
+                  <style>
+                     #banner-12345 {
+                     display: none;
+                     margin-bottom: 30px;
+                     padding: 20px 10px;
+                     border-radius: 5px;
+                     background: #D30000;
+                     color: #fff;
+                     text-align: center;
+                     font-weight: bold;
+                     }
+                  </style>
                   <img src="https://raw.githubusercontent.com/Dve4Ever/cell-attack/master/LogoMakr_5yspMU.png" alt="Cell Attack" />
                </center>
             </div>
@@ -184,14 +205,13 @@
       <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
       <script src="js/app.js"></script>
       <script type="text/javascript" id="cookieinfo"
-	     src="//cookieinfoscript.com/js/cookieinfo.min.js"
-	     data-bg="#645862"
-	     data-fg="#FFFFFF"
-	     data-link="#F1D600"
-	     data-cookie="CookieInfoScript"
-	     data-text-align="left"
-         data-close-text="Got it!">
-      </script>
+         src="//cookieinfoscript.com/js/cookieinfo.min.js"
+         data-bg="#645862"
+         data-fg="#FFFFFF"
+         data-link="#F1D600"
+         data-cookie="CookieInfoScript"
+         data-text-align="left"
+         data-close-text="Got it!"></script>
       <script src="js/ads.js" type="text/javascript"></script>
    </body>
 </html>
