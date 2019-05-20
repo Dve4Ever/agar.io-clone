@@ -13,6 +13,9 @@ html, body {
     overflow: scroll;
 }
 
+html {
+  overflow-y: scroll;
+}
 
 html, body, canvas {
     width: 100%;
