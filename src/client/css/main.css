@@ -85,7 +85,7 @@ div {
     list-style: none;
     box-sizing: border-box;
     height: 285px;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .chatbox .chat-list li {
@@ -232,7 +232,7 @@ div {
     -ms-transition: max-height 1s;
     -o-transition: max-height 1s;
     transition: max-height 1s;
-    overflow: scroll;
+    overflow: auto;
 }
 
 #settings {
