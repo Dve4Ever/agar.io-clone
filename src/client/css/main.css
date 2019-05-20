@@ -163,7 +163,7 @@ div {
     box-shadow: 0 0 3px 1px #DDDDDD;
 }
 
-#startButton, #skinsButton {
+#startButton, #skinsButton, #spectateButton {
     position: relative;
     margin: auto;
     margin-top: 10px;
@@ -186,6 +186,7 @@ div {
     margin-bottom: 10px;
 }
 
+#spectateButton:active, #spectateButton:hover,
 #startButton:active, #startButton:hover,
 #skinsButton:active, #skinsButton:hover {
     top: 1px;
