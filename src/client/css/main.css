@@ -239,6 +239,10 @@ div {
     max-height: 0;
 }
 
+#spectateButton {
+  visibility: hidden;
+}
+
 #startMenu h3 {
     padding-bottom: 0;
     margin-bottom: 0;
