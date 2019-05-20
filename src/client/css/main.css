@@ -13,7 +13,7 @@ html, body {
     overflow: scroll;
 }
 
-html {
+html, body {
   overflow-y: scroll;
 }
 
