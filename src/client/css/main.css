@@ -274,6 +274,10 @@ div {
   width: 50%;
 }
 
+.centerimg {
+    width: 100%;
+    height: auto;
+}
 @media only screen  and (min-width : 1224px) {
 #mobile {
 display: none;
