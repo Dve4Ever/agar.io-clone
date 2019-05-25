@@ -61,21 +61,20 @@
       <div id="startMenuWrapper">
          <div id="startMenu">
             <div align="center">
-               <center>
+               <center> 
                   <img src="https://raw.githubusercontent.com/Dve4Ever/cell-attack/master/LogoMakr_5yspMU.png" alt="Cell Attack" class="centerimg">
                </center>
             </div>
-            <input type="text" tabindex="0" autofocus placeholder="Nickname..." id="playerNameInput" maxlength="30" />
-            <b class="input-error">Nick must be alphanumeric characters only!</b>
-
-<select id="gamemode" onchange="if($(this).val()=='regular'){window.location.href='http://agar5.herokuapp.com'}else{window.location.href='http://agar5-beta.herokuapp.com'}" required="">
+<input type="text" tabindex="0" autofocus placeholder="Nick" id="playerNameInput" maxlength="25" />
+            
+            <select id="gamemode" onchange="if($(this).val()=='regular'){window.location.href='http://agar5.herokuapp.com'}else{window.location.href='http://agar5-beta.herokuapp.com'}" required="">
                 <option value="regular">Regular</option>
                 <option value="beta">Beta Testing</option>
             </select>
             
             <b class="input-error">Nick must be alphanumeric characters only!</b>
             
-             <a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">Play</button></a>
+           <a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">Play</button></a>
             <button onclick="window.location.href = 'skins.html'" id="skinsButton">Skins</button>
             <button id="settingsButton"></button>
             <br />
@@ -85,15 +84,12 @@
                     <label><input id="continuity" type="checkbox" checked>Continuity</label>
                     <label><input id="roundFood" type="checkbox" checked>Rounded food</label>
             </div>
-            <button id="spectateButton">Spectate</button>
-            <button id="instructionsButton">How do i play?</button>
-            <br />
-              <div id="instructions">
+            <div id="instructions">
+                <hr>
                 <ul>
-                    <li>Move your mouse on the screen to move your character</li>
-                    <li>Eat food and other players in order to grow your character (food respawns every time a player eats it)</li>
-                    <li>A player's mass is the number of food particles eaten</li>
-                    <li>Objective: Try to get fat and eat other players</li>
+                    <li>Move your mouse to control your cell.</li>
+                    <li>Eat other cells to grow bigger.</li>
+                    <li><small style="font-size:9px !important">user id: <span id="userid" style="font-size:9px !important"></span></small></li>
                 </ul>
             </div>
          </div>
