@@ -144,22 +144,24 @@ div {
 }
 
 #playerNameInput {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    border: solid 1px #dcdcdc;
-    transition: box-shadow 0.5s, border 0.5s;
-    box-sizing: border-box;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    margin-bottom: 10px;
-    outline: none;
+    width: 65%;
+    text-align: left;
+    padding: 17px 12px;
+    border: 1px solid #ccc;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    border-radius: 4px;
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+    height:34px;
+    line-height:1.42857143;
+    color: #555;
+    box-sizing:border-box;
 }
 
-#playerNameInput:focus, #playerNameInput.focus {
-    border: solid 1px #CCCCCC;
-    box-shadow: 0 0 3px 1px #DDDDDD;
+#playerNameInput:focus, #playerNameInput.focus, #gamemode:focus, #gamemode.focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
 }
 
 #startButton, #skinsButton, #spectateButton #settingsButton {
