@@ -67,114 +67,24 @@
             </div>
             <input type="text" tabindex="0" autofocus placeholder="Nickname..." id="playerNameInput" maxlength="30" />
             <b class="input-error">Nick must be alphanumeric characters only!</b>
-            <button id="settingsButton">Settings</button>
+
+<select id="gamemode" onchange="if($(this).val()=='regular'){window.location.href='http://agar5.herokuapp.com'}else{window.location.href='http://agar5-beta.herokuapp.com'}" required="">
+                <option value="regular">Regular</option>
+                <option value="beta">Beta Testing</option>
+            </select>
+            
+            <b class="input-error">Nick must be alphanumeric characters only!</b>
+            
+             <a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">Play</button></a>
+            <button onclick="window.location.href = 'skins.html'" id="skinsButton">Skins</button>
+            <button id="settingsButton"></button>
             <br />
             <div id="settings">
-               <h3>Settings</h3>
-               <ul>
-                  <label><input id="visBord" type="checkbox">Show border</label>
-                  <label><input id="showMass" type="checkbox">Show mass</label>
-                  <br />
-                  <label><input id="continuity" type="checkbox">Continue moving when mouse is off-screen</label>
-                  <br />
-                  <label><input id="roundFood" type="checkbox" checked>Rounded food</label>
-                  <label><input id="darkMode" type="checkbox">Toggle Dark Mode</label>
-               </ul>
+                    <label><input id="visBord" type="checkbox" checked>Show border</label>
+                    <label><input id="showMass" type="checkbox" checked>Show mass</label>
+                    <label><input id="continuity" type="checkbox" checked>Continuity</label>
+                    <label><input id="roundFood" type="checkbox" checked>Rounded food</label>
             </div>
-             <a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">Play</button></a>
-            <!DOCTYPE html>
-            <html>
-               <head>
-                  <meta name="viewport" content="width=device-width, initial-scale=1">
-                  <style>
-                     body {font-family: Arial, Helvetica, sans-serif;}
-                     /* The Modal (background) */
-                     .modal {
-                     display: none; /* Hidden by default */
-                     position: fixed; /* Stay in place */
-                     z-index: 1; /* Sit on top */
-                     padding-top: 100px; /* Location of the box */
-                     left: 0;
-                     top: 0;
-                     width: 100%; /* Full width */
-                     height: 100%; /* Full height */
-                     overflow: auto; /* Enable scroll if needed */
-                     background-color: rgb(0,0,0); /* Fallback color */
-                     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-                     }
-                     /* Modal Content */
-                     .modal-content {
-                     background-color: #fefefe;
-                     margin: auto;
-                     padding: 20px;
-                     border: 1px solid #888;
-                     width: 80%;
-                     }
-                     /* The Close Button */
-                     .close {
-                     color: #aaaaaa;
-                     float: right;
-                     font-size: 28px;
-                     font-weight: bold;
-                     }
-                     .close:hover,
-                     .close:focus {
-                     color: #000;
-                     text-decoration: none;
-                     cursor: pointer;
-                     }
-                  </style>
-               </head>
-               <body>
-                  <button id="skinsButton">Skins</button>
-                  <div id="skinsModal" class="modal">
-                     <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <font size="36">Skins</font>
-                     </div>
-                  </div>
-                  <script>
-                     // Get the modal
-                     var modal = document.getElementById("skinsModal");
-                     
-                     // Get the button that opens the modal
-                     var btn = document.getElementById("skinsButton");
-                     
-                     // Get the <span> element that closes the modal
-                     var span = document.getElementsByClassName("close")[0];
-                     
-                     // When the user clicks the button, open the modal 
-                     btn.onclick = function() {
-                       modal.style.display = "block";
-                     }
-                     
-                     // When the user clicks on <span> (x), close the modal
-                     span.onclick = function() {
-                       modal.style.display = "none";
-                     }
-                     
-                     // When the user clicks anywhere outside of the modal, close it
-                     window.onclick = function(event) {
-                       if (event.target == modal) {
-                         modal.style.display = "none";
-                       }
-                     }
-                  </script>
-               </body>
-            </html>
-            <center>
-               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-               <!-- Main Page -->
-               <ins class="adsbygoogle"
-                  style="display:block"
-                  data-ad-client="ca-pub-5731588986654370"
-                  data-ad-slot="2161635154"
-                  data-ad-format="auto"
-                  data-full-width-responsive="true"></ins>
-               <script>
-                  (adsbygoogle = window.adsbygoogle || []).push({});
-               </script>
-            </center>
             <button id="spectateButton">Spectate</button>
             <button id="instructionsButton">How do i play?</button>
             <br />
