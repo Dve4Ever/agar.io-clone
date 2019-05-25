@@ -65,35 +65,32 @@
                   <img src="https://raw.githubusercontent.com/Dve4Ever/cell-attack/master/LogoMakr_5yspMU.png" alt="Cell Attack" class="centerimg">
                </center>
             </div>
-<input type="text" tabindex="0" autofocus placeholder="Nick" id="playerNameInput" maxlength="25" />
-            
+            <input type="text" tabindex="0" autofocus placeholder="Nick" id="playerNameInput" maxlength="25" />
             <select id="gamemode" onchange="if($(this).val()=='regular'){window.location.href='http://agar5.herokuapp.com'}else{window.location.href='http://agar5-beta.herokuapp.com'}" required="">
-                <option value="regular">Regular</option>
-                <option value="beta">Beta Testing</option>
+               <option value="regular">Regular</option>
+               <option value="beta">Beta Testing</option>
             </select>
-            
             <b class="input-error">Nick must be alphanumeric characters only!</b>
-            
-           <a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">Play</button></a>
+            <a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">Play</button></a>
             <button onclick="window.location.href = 'skins.html'" id="skinsButton">Skins</button>
             <button id="settingsButton"></button>
             <br />
             <div id="settings">
-                    <label><input id="visBord" type="checkbox" checked>Show border</label>
-                    <label><input id="showMass" type="checkbox" checked>Show mass</label>
-                    <label><input id="continuity" type="checkbox" checked>Continuity</label>
-                    <label><input id="roundFood" type="checkbox" checked>Rounded food</label>
+               <label><input id="visBord" type="checkbox" checked>Show border</label>
+               <label><input id="showMass" type="checkbox" checked>Show mass</label>
+               <label><input id="continuity" type="checkbox" checked>Continuity</label>
+               <label><input id="roundFood" type="checkbox" checked>Rounded food</label>
             </div>
             <button id="spectateButton">Spectate</button>
-            <button id="instructionsButton">How do i play?</button>
+            <p><span style="font-size: 15pt;"><strong>How to Play:</strong></span></p>
             <br />
-              <div id="instructions">
-                <ul>
-                    <li>Move your mouse on the screen to move your character</li>
-                    <li>Eat food and other players in order to grow your character (food respawns every time a player eats it)</li>
-                    <li>A player's mass is the number of food particles eaten</li>
-                    <li>Objective: Try to get fat and eat other players</li>
-                </ul>
+            <div id="instructions">
+               <ul>
+                  <li>Move your mouse on the screen to move your character</li>
+                  <li>Eat food and other players in order to grow your character (food respawns every time a player eats it)</li>
+                  <li>A player's mass is the number of food particles eaten</li>
+                  <li>Objective: Try to get fat and eat other players</li>
+               </ul>
             </div>
          </div>
       </div>
