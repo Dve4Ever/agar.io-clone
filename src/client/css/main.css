@@ -222,6 +222,12 @@ div {
     border: 1px solid #46b8da;
 }
 
+#spectateButton {
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+
 #settingsButton:active, #settingsButton:hover, #skinsButton:active, #skinsButton:hover {
     background-color: #46b8da;
 }
