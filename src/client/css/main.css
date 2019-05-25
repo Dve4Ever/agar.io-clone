@@ -226,17 +226,26 @@ div {
     background-color: #46b8da;
 }
 
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.centerimg {
+    width: 100%;
+    height: auto;
+}
+
 #settings, #startMenuWrapper {
-    -webkit-transition: max-height 1s;
-    -moz-transition: max-height 1s;
-    -ms-transition: max-height 1s;
-    -o-transition: max-height 1s;
-    transition: max-height 1s;
-    overflow: auto;
+    overflow: hidden;
 }
 
 #settings {
     max-height: 0;
+    margin-bottom:10px;
+    margin-top:10px;
 }
 
 #startMenu h3 {
@@ -245,7 +254,7 @@ div {
 }
 
 #startMenu ul {
-    margin: auto;
+    margin: 10px;
     padding: 10px;
     margin-top: 0;
 }
@@ -267,17 +276,11 @@ div {
     opacity: 0;
 }
 
-.centerimg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+hr{
+    border:0;
+    border-top:1px solid #eee;
 }
 
-.centerimg {
-    width: 100%;
-    height: auto;
-}
 @media only screen  and (min-width : 1224px) {
 #mobile {
 display: none;
@@ -288,15 +291,4 @@ display: none;
 #chatbox {
 display: none;
         }
-}
-
-input [type="image"]:focus{
- border:none;
- outline: 1px solid transparent;
- border-style: none;
-}
-
-*:focus {
- outline: 1px solid transparent;
- border-style: none;
 }
