@@ -67,7 +67,21 @@
             </div>
             <input type="text" tabindex="0" autofocus placeholder="Nickname..." id="playerNameInput" maxlength="30" />
             <b class="input-error">Nick must be alphanumeric characters only!</b>
-            <a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">Play</button></a>
+            <button id="settingsButton">Settings</button>
+            <br />
+            <div id="settings">
+               <h3>Settings</h3>
+               <ul>
+                  <label><input id="visBord" type="checkbox">Show border</label>
+                  <label><input id="showMass" type="checkbox">Show mass</label>
+                  <br />
+                  <label><input id="continuity" type="checkbox">Continue moving when mouse is off-screen</label>
+                  <br />
+                  <label><input id="roundFood" type="checkbox" checked>Rounded food</label>
+                  <label><input id="darkMode" type="checkbox">Toggle Dark Mode</label>
+               </ul>
+            </div>
+             <a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">Play</button></a>
             <!DOCTYPE html>
             <html>
                <head>
@@ -162,20 +176,6 @@
                </script>
             </center>
             <button id="spectateButton">Spectate</button>
-            <button id="settingsButton">Settings</button>
-            <br />
-            <div id="settings">
-               <h3>Settings</h3>
-               <ul>
-                  <label><input id="visBord" type="checkbox">Show border</label>
-                  <label><input id="showMass" type="checkbox">Show mass</label>
-                  <br />
-                  <label><input id="continuity" type="checkbox">Continue moving when mouse is off-screen</label>
-                  <br />
-                  <label><input id="roundFood" type="checkbox" checked>Rounded food</label>
-                  <label><input id="darkMode" type="checkbox">Toggle Dark Mode</label>
-               </ul>
-            </div>
             <div id="instructions">
                     <font size="7">Gameplay</font>
                     <ul>
