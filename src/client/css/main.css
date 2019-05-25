@@ -124,23 +124,24 @@ div {
 #startMenu {
     position: relative;
     margin: auto;
-    margin-top: 100px;
-    width: 390px;
+    width: 350px;
     padding: 20px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    padding-bottom:15px;
+    border-radius: 10px;
     background-color: white;
     box-sizing: border-box;
-    border: solid 1.2px #d8d6d6;
-    box-shadow: 0px 0px 6px 2px #DDDDD;
+    color:#333;
 }
 
 #startMenu p {
-    padding: .3;
-    text-align: center;
-    font-size: x-large;
-    font-weight: bold;
+    padding: 0;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    margin:0;
+    margin-bottom:20px;
+    margin-top:10px;
+    margin-left:20px;
 }
 
 #gamemode{
