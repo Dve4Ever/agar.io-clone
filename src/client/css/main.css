@@ -189,7 +189,7 @@ div {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
 }
 
-#startButton, #skinsButton, #spectateButton #settingsButton {
+#startButton, #settingsButton, #skinsButton {
     margin: auto;
     width: 130px;
     height: 35px;
@@ -226,18 +226,6 @@ div {
     background-color: #46b8da;
 }
 
-.centerimg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-.centerimg {
-    width: 100%;
-    height: auto;
-}
-
 #settings, #startMenuWrapper {
     overflow: hidden;
 }
@@ -251,6 +239,18 @@ div {
 #startMenu h3 {
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.centerimg {
+    width: 100%;
+    height: auto;
 }
 
 #startMenu ul {
