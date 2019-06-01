@@ -1,7 +1,7 @@
 {
-  "name": "Cell Attack",
-  "version": "2.0.0",
-  "description": "Official Cell Attack",
+  "name": "agar-clone",
+  "version": "1.0.0",
+  "description": "A simple Agar.io clone",
   "main": "server/server.js",
   "scripts": {
     "build": "gulp build",
