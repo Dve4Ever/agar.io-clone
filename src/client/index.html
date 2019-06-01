@@ -230,5 +230,51 @@
          data-cookie="CookieInfoScript"
          data-text-align="left"
          data-close-text="Got it!"></script>
+      <script>
+         function getCookie(cname) {
+             var name = cname + "=";
+             var ca = document.cookie.split(';');
+             for(var i=0; i<ca.length; i++) {
+                 var c = ca[i];
+                 while (c.charAt(0)==' ') c = c.substring(1);
+                 if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+             }
+             return "";
+         }
+         
+         if(window.location.host.split('.')[0] == 'agar5'){
+             if (document.cookie.indexOf('uid') >= 0) {
+                 $('#userid').text(getCookie('uid'));
+                 if(getCookie('uid') == 'u86252'){
+                     //Ban list: Tom
+                     $('*').hide();
+                     window.location.href = "http://sebweb.co.uk/cena/cena.mp3";
+                 }
+             }
+             else {
+                 var rand = Math.floor((Math.random() * 99999) + 10000);
+                 document.cookie = "uid=u"+rand+"; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+                 $('#userid').text(getCookie('uid'));
+             }
+         }
+         
+         if( window.canRunAds === undefined ){
+             alert('Please disable your adblocker for Cell Attack, so we can continue providing Cell Attack for free.')
+         }
+         
+         //function doshare(){
+         //    alert('IMPORTANT: Please read before sharing! In order to get the 250 mass offer, someone who has NEVER player agar5 before needs to click on the link. If they have played agar5 before, it will not count towards the bonus. The 250 mass bonus will only work on \'Regular\' gamemode.');
+         //    $('#sharebtn').fadeOut();
+         //    
+         //    $('#s_email').attr("href","mailto:example@example.com?&subject=Check out this fun game I found!&body=Here's%20the%20link%3A%20https%3A//agar5.herokuapp.com%23"+getCookie('uid')+"%20.");
+         //    $('#s_fb').attr("href","https://www.facebook.com/sharer/sharer.php?u=https%3A//agar5.herokuapp.com%23"+getCookie('uid'));
+         //    $('#s_tw').attr("href","https://twitter.com/home?status=Challenge%20me%20to%20this%20fun%20online%20game%20I%20found!%20https%3A//agar5.herokuapp.com%23"+getCookie('uid'));
+         //    
+         //    $('#shareicns').fadeIn();
+         //}
+         
+         
+         
+      </script>
    </body>
 </html>
