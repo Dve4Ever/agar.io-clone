@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Meta Properties -->
+      <link rel="icon" href="https://raw.githubusercontent.com/Dve4Ever/cell-attack/master/9D8426C0-868F-4B2B-B8E2-F20B0B3CFCDA.png" type="image/x-icon" />
+      <meta charset="UTF-8">
+      <title>Cell Attack</title>
+      <meta name="description" content="The smash hit game! Control your cell and eat other players to grow larger! Play with millions of players around the world and try to become the biggest cell of all!">
+      <meta name="keywords" content="agario, agar, io, cell, cells, virus, bacteria, blob, game, games, web game, html5, fun, flash, devoooo, popular, free, dev4ever, online, pewdiepie, jumbo, agario hacks, google">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+      <meta name="language" content="en_US" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="propeller" content="acafaeaea0f91690a8e94737e6095fcb">
+      <script charset="UTF-8" src="//cdn.sendpulse.com/js/push/4dabe5bf3e89c5ffecb5a1d40a15cfff_1.js" async></script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109841514-2"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-109841514-2');
+      </script>
+      <!-- CSS -->
+      <link rel="stylesheet" href="css/main.css" />
+      <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+      <style>
+         body {
+         font-family: 'Baloo';font-size: 22px;
+         }
+      </style>
+      <!-- Audio -->
+      <audio id="split_cell" src="audio/split.mp3"></audio>
+      <audio id="spawn_cell" src="audio/spawn.mp3"></audio>
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-5731588986654370",
+              enable_page_level_ads: true
+         });
+      </script>
+      <style type="text/css">
+         .centerImage
+         {
+         text-align:center;
+         display:block;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="fb-root"></div>
+      <script>
+         // This is called with the results from from FB.getLoginStatus().
+         function statusChangeCallback(response) {
+           console.log('statusChangeCallback');
+           console.log(response);
+           // The response object is returned with a status field that lets the
+           // app know the current login status of the person.
+           // Full docs on the response object can be found in the documentation
+           // for FB.getLoginStatus().
+           if (response.status === 'connected') {
+             // Logged into your app and Facebook.
+             testAPI();
+           document.getElementById('principal').style.display='block';
+           } else if (response.status === 'not_authorized') {
+             // The person is logged into Facebook, but not your app.
+             document.getElementById('status').innerHTML = 'Please log ' +
+               'into this app.';
+               
+           } else {
+             // The person is not logged into Facebook, so we're not sure if
+             // they are logged into this app or not.
+             document.getElementById('status').innerHTML = 'Please log ' +
+               'into Facebook.';
+           }
+         }
+         
+         // This function is called when someone finishes with the Login
+         // Button.  See the onlogin handler attached to it in the sample
+         // code below.
+         function checkLoginState() {
+           FB.getLoginStatus(function(response) {
+             statusChangeCallback(response);
+           });
+         }
+         
+         window.fbAsyncInit = function() {
+         FB.init({
+           appId      : '875476362797905',
+           cookie     : true,  // enable cookies to allow the server to access 
+                               // the session
+           xfbml      : true,  // parse social plugins on this page
+           version    : 'v2.2' // use version 2.2
+         });
+         
+         // Now that we've initialized the JavaScript SDK, we call 
+         // FB.getLoginStatus().  This function gets the state of the
+         // person visiting this page and can return one of three states to
+         // the callback you provide.  They can be:
+         //
+         // 1. Logged into your app ('connected')
+         // 2. Logged into Facebook, but not your app ('not_authorized')
+         // 3. Not logged into Facebook and can't tell if they are logged into
+         //    your app or not.
+         //
+         // These three cases are handled in the callback function.
+         
+                       FB.Canvas.setAutoGrow();
+         
+         
+         FB.getLoginStatus(function(response) {
+           statusChangeCallback(response);
+         });
+         
+         };
+         
+         // Load the SDK asynchronously
+         (function(d, s, id) {
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) return;
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+         
+         // Here we run a very simple test of the Graph API after login is
+         // successful.  See statusChangeCallback() for when this call is made.
+         function testAPI() {
+           console.log('Welcome!  Fetching your information.... ');
+           FB.api('/me', function(response) {
+             console.log('Conectado com sucesso : ' + response.name);
+         $("#aviso").slideUp("slow");
+         document.getElementById('status').innerHTML ='Thanks for connecting, ' + response.name + '!';
+                 $("#rodape").html('Hello, '+response.name+' !');
+               $("#conectese").slideUp("slow");
+           });
+         }
+         
+         function compartilhar() {
+         
+         FB.ui(
+         {
+           method: 'share',
+           href: 'https://developers.facebook.com/docs/',
+         },
+         function(response) {
+           if (response && !response.error_code) {
+             alert('Posting completed.');
+           } else {
+             alert('Error while posting.');
+           }
+         }
+         );
+         
+             
+         };
+         
+      </script>
+      <div id="gameAreaWrapper">
+         <div id="status"><span class="title">Leaderboard</span></div>
+         <div class="chatbox" id="chatbox">
+            <ul id="chatList" class="chat-list"></ul>
+            <input id="chatInput" type="text" class="chat-input" placeholder="Press enter to chat..." maxlength="50" />
+         </div>
+         <div id="mobile">
+            <input type="image" id="split" class="split" src="img/split.png" alt="splitBtn">
+            <input type="image" id="feed" class="feed" src="img/feed.png" alt="feedBtn">
+         </div>
+         <canvas tabindex="1" id="cvs"></canvas>
+      </div>
+      <div id="startMenuWrapper">
+         <div id="startMenu">
+            <div align="center">
+               <center> 
+                  <img src="https://raw.githubusercontent.com/Dve4Ever/cell-attack/master/LogoMakr_5yspMU.png" alt="Cell Attack" class="centerimg">
+               </center>
+            </div>
+            <input type="text" tabindex="0" autofocus placeholder="Nick" id="playerNameInput" maxlength="25" />
+            <select id="gamemode" onchange="if($(this).val()=='regular'){window.location.href='http://agar5.herokuapp.com'}else{window.location.href='http://agar5-beta.herokuapp.com'}" required="">
+               <option value="regular">Regular</option>
+               <option value="beta">Beta Testing</option>
+            </select>
+            <b class="input-error">Nick must be alphanumeric characters only!</b>
+            <a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">Play</button></a>
+            <button onclick="window.location.href = 'skins.html'" id="skinsButton">Skins</button>
+            <button id="settingsButton"></button>
+            <br />
+            <div id="settings">
+               <label><input id="visBord" type="checkbox" checked>Show border</label>
+               <label><input id="showMass" type="checkbox" checked>Show mass</label>
+               <label><input id="continuity" type="checkbox" checked>Continuity</label>
+               <label><input id="roundFood" type="checkbox" checked>Rounded food</label>
+            </div>
+            <button id="spectateButton">Spectate</button>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Cell-Attack Under Name -->
+            <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-5731588986654370"
+               data-ad-slot="3380112392"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+            <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <div id="instructions">
+               <h3>How to play:</h3>
+               <ul>
+                  <li>Move your mouse on the screen to move your character</li>
+                  <li>Eat food and other players in order to grow your character (food respawns every time a player eats it)</li>
+                  <li>A player's mass is the number of food particles eaten</li>
+                  <li>Objective: Try to get fat and eat other players</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+      <!-- JS -->
+      <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/sp-push-worker-fb.js"></script>
+      <script src="js/sp-push-manifest.json"></script>
+      <script type="text/javascript" id="cookieinfo"
+         src="//cookieinfoscript.com/js/cookieinfo.min.js"
+         data-bg="#645862"
+         data-fg="#FFFFFF"
+         data-link="#F1D600"
+         data-cookie="CookieInfoScript"
+         data-text-align="left"
+         data-close-text="Got it!"></script>
+      <script>
+         function getCookie(cname) {
+             var name = cname + "=";
+             var ca = document.cookie.split(';');
+             for(var i=0; i<ca.length; i++) {
+                 var c = ca[i];
+                 while (c.charAt(0)==' ') c = c.substring(1);
+                 if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+             }
+             return "";
+         }
+         
+         if(window.location.host.split('.')[0] == 'agar5'){
+             if (document.cookie.indexOf('uid') >= 0) {
+                 $('#userid').text(getCookie('uid'));
+                 if(getCookie('uid') == 'u86252'){
+                     //Ban list: Tom
+                     $('*').hide();
+                     window.location.href = "http://sebweb.co.uk/cena/cena.mp3";
+                 }
+             }
+             else {
+                 var rand = Math.floor((Math.random() * 99999) + 10000);
+                 document.cookie = "uid=u"+rand+"; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+                 $('#userid').text(getCookie('uid'));
+             }
+         }
+         
+         if( window.canRunAds === undefined ){
+             alert('Please disable your adblocker for Cell Attack, so we can continue providing Cell Attack for free.')
+         }
+         
+         //function doshare(){
+         //    alert('IMPORTANT: Please read before sharing! In order to get the 250 mass offer, someone who has NEVER player agar5 before needs to click on the link. If they have played agar5 before, it will not count towards the bonus. The 250 mass bonus will only work on \'Regular\' gamemode.');
+         //    $('#sharebtn').fadeOut();
+         //    
+         //    $('#s_email').attr("href","mailto:example@example.com?&subject=Check out this fun game I found!&body=Here's%20the%20link%3A%20https%3A//agar5.herokuapp.com%23"+getCookie('uid')+"%20.");
+         //    $('#s_fb').attr("href","https://www.facebook.com/sharer/sharer.php?u=https%3A//agar5.herokuapp.com%23"+getCookie('uid'));
+         //    $('#s_tw').attr("href","https://twitter.com/home?status=Challenge%20me%20to%20this%20fun%20online%20game%20I%20found!%20https%3A//agar5.herokuapp.com%23"+getCookie('uid'));
+         //    
+         //    $('#shareicns').fadeIn();
+         //}
+         
+         
+         
+      </script>
+   </body>
+</html>
