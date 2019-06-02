@@ -291,7 +291,7 @@ function setupSocket(socket) {
     });
 
     socket.on('virusSplit', function (virusCell) {
-        socket.emit('2', virusCell);
+        socket.emit('8', virusCell);
         reenviar = false;
     });
 }
@@ -593,7 +593,7 @@ function gameLoop() {
                 graph.fillText(reason, global.screenWidth / 2, global.screenHeight / 2 + 20);
             }
             else {
-                graph.fillText('Get the F*** out.', global.screenWidth / 2, global.screenHeight / 2);
+                graph.fillText('Ban hammer has been struck', global.screenWidth / 2, global.screenHeight / 2);
             }
         }
         else {
