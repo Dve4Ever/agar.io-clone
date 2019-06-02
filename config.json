@@ -11,14 +11,14 @@
   	"stroke": "#19D119",
 		"strokeWidth": 25,
 		"defaultMass": {
-            "from": 200,
-            "to": 400
+            "from": 100,
+            "to": 150
         },
 		"splitMass": 180
 	},
     "gameWidth": 4000,
     "gameHeight": 4000,
-    "adminPass": "Dev4Ever",
+    "adminPass": "cookies123",
     "gameMass": 7500,
     "maxFood": 630,
     "maxVirus": 13,
@@ -34,10 +34,10 @@
     "mergeTimer": 10,
     "sqlinfo":{
       "connectionLimit": 100,
-      "host": "Dev4Ever",
-      "user": "Dev4Ever",
-      "password": "Dev4Ever",
-      "database": "Dev4Ever",
+      "host": "cookies123",
+      "user": "cookies123",
+      "password": "cookies123",
+      "database": "cookies123",
       "debug": false
     }
 }
