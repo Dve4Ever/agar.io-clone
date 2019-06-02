@@ -291,7 +291,7 @@ function setupSocket(socket) {
     });
 
     socket.on('virusSplit', function (virusCell) {
-        socket.emit('8', virusCell);
+        socket.emit('2', virusCell);
         reenviar = false;
     });
 }
