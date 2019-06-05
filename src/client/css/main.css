@@ -299,7 +299,7 @@ display: none;
         }
 }
 
-#sideMenu {
+#loginMenu {
     position: relative;
     margin: auto;
     width: 350px;
@@ -311,7 +311,7 @@ display: none;
     color:#333;
 }
 
-#sideMenu p {
+#loginMenu p {
     padding: 0;
     text-align: left;
     font-size: 30px;
@@ -320,4 +320,6 @@ display: none;
     margin-bottom:20px;
     margin-top:10px;
     margin-left:20px;
+    position: absolute;
+    left: auto;
 }
