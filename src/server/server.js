@@ -753,7 +753,7 @@ http.listen( serverport, ipaddress, function() {
 // Player bots (Experimental)
 
     if (this.config.serverBots > 0) {
-        var BotLoader = require('./ai/BotLoader.js');
+        var BotLoader = require('./BotLoader.js');
         this.bots = new BotLoader(this,this.config.serverBots);
         console.log("[Game] Loaded "+this.config.serverBots+" player bots");
     }
