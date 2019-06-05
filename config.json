@@ -39,5 +39,6 @@
       "password": "cookies123",
       "database": "cookies123",
       "debug": false
+      "serverBots": 3,
     }
 }
