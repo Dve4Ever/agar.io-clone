@@ -746,3 +746,14 @@ var serverport = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || c.port
 http.listen( serverport, ipaddress, function() {
     console.log('[DEBUG] Listening on ' + ipaddress + ':' + serverport);
 });
+    // Config
+    this.config = { // Border - Right: X increases, Down: Y increases (as of 2015-05-20)
+		serverBots: 3, // Amount of player bots to spawn (Experimental)
+};
+// Player bots (Experimental)
+
+    if (this.config.serverBots > 0) {
+        var BotLoader = require('./ai/BotLoader.js');
+        this.bots = new BotLoader(this,this.config.serverBots);
+        console.log("[Game] Loaded "+this.config.serverBots+" player bots");
+    }
