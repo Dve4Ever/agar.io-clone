@@ -298,3 +298,26 @@ display: none;
 display: none;
         }
 }
+
+#sideMenu {
+    position: relative;
+    margin: auto;
+    width: 350px;
+    padding: 20px;
+    padding-bottom:15px;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    color:#333;
+}
+
+#sideMenu p {
+    padding: 0;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    margin:0;
+    margin-bottom:20px;
+    margin-top:10px;
+    margin-left:20px;
+}
